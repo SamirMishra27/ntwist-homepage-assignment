@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .feature-block > :first-child {
+        @apply w-1/2 flex flex-col items-start justify-evenly gap-4;
+    }
+
+    .feature-block >:last-child {
+        @apply w-1/2 flex items-center justify-center;
+    }
+
+    .feature-block > :first-child button {
+        @apply mt-4;
+    }
+
+    .feature-block > :first-child h1 {
+        @apply font-medium text-[44px] text-feature-orange;
+    }
+
+    .feature-block >:first-child p {
+        @apply text-base text-justify;
+    }
+
+    .feature-block >:last-child img {
+        @apply w-full;
+    }
+}
+
+:root {
+  font-family: Roboto, Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+    "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: whitesmoke;
+    /* background-color: black; */
+    /* justify-content: space-evenly; */
+}
+
+body #root {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
